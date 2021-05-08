@@ -15,3 +15,6 @@ device.o: device.cpp
 clean:
 	rm -rf pub 
 	rm -rf *.o
+
+static:
+	ar rcs libdevice.a HelloWorld.o device.o
